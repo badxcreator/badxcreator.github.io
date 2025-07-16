@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="sda.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/examples/js/controls/OrbitControls.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "kuBuJXweXyySaZ5Kx",
+            });
+        })();
+    </script>
+    <script src="sda.js"></script>
+</head>
+
+<body>
+
+    <!-- header start -->
+
+    <!-- mobile header  -->
+    <header class="mobile-navbar">
+        <div class="logo">My Logo</div>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    </header>
+    
+    <!-- Sidebar Navigation (Hidden by Default) -->
+    <nav id="sideNavbar" class="sidebar">
+        <button class="close-btn" id="closeSidebar">&times;</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>    
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="loprob">
+                <button class="log">Login</button>
+                <button class="pro"></button>
+            </div>
+        </nav>
+
+
+        <!-- banner -->
+
+        <div class="container">
+            <div class="left-content">
+                <h1>Xbox Controller</h1>
+                <p class="auto-type">Unlock an immersive gaming experience with this high-quality Xbox controller,
+                    designed for precision,
+                    comfort, and seamless gameplay!</p>
+                <button class="purbut">Purchase</button>
+            </div>
+
+            <div class="right-model" id="model-container">
+                <!-- The 3D model will render inside this div -->
+            </div>
+        </div>
+    </header>
+
+    <!-- header close -->
+
+    <!-- service start -->
+
+    <section class="service" id="service">
+        <div class="firsertxt">
+            <h1>Services</h1>
+        </div>
+        <div class="midsertxt">
+            <h1>Gaming Hardware & Accessories</h1>
+            <p>At [Your Store Name], we offer a range of gaming hardware, from consoles to gaming PCs, ensuring you
+                have the tools you need to play your best. We stock the latest gaming consoles, including PlayStation,
+                Xbox, Nintendo Switch, and more. Additionally, we offer a wide variety of gaming accessories, including
+                headsets, controllers, gaming chairs, and keyboards, all from trusted brands.</p>
+            <h1>Game Collection</h1>
+            <p>Find the latest and greatest titles across every platform. Whether you're into action-packed adventures,
+                strategy games, or online multiplayer experiences, our diverse game library has something for everyone.
+                We offer games for PlayStation, Xbox, PC, and Nintendo Switch, along with rare and collectible editions
+                for die-hard fans.</p>
+            <h1>Exclusive Gaming Merch</h1>
+            <p>Show off your passion for gaming with exclusive merchandise. We offer gaming-themed clothing, posters,
+                action figures, and more. Whether you're a fan of classic franchises or the latest releases, you'll find
+                something special to add to your collection.</p>
+            <h1>Custom Gaming Solutions</h1>
+            <p>Looking to upgrade your gaming setup? Our custom gaming solutions allow you to personalize your
+                experience. From building the perfect gaming PC to setting up your ideal gaming room, we provide expert
+                advice and the best products to make your gaming space uniquely yours.</p>
+        </div>
+    </section>
+
+    <!-- service end -->
+
+    <!-- products start -->
+
+    <section class="products">
+        <div class="firprotxt">
+            <h1>Featured Products</h1>
+            <p>Explore Our Top-Selling Items</p>
+        </div>
+
+        <!-- Scrollable product container -->
+        <div class="scroll-container">
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-1">
+                    <!-- You can render a 3D model here instead of an image -->
+                </div>
+                <h3>Product Name 1</h3>
+                <p>Description of the product.</p>
+            </div>
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-2">
+                    <!-- Another model -->
+                </div>
+                <h3>Product Name 2</h3>
+                <p>Description of the product.</p>
+            </div>
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-3">
+                    <!-- Another model -->
+                </div>
+                <h3>Product Name 3</h3>
+                <p>Description of the product.</p>
+            </div>
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-4">
+                    <!-- Another model -->
+                </div>
+                <h3>Product Name 4</h3>
+                <p>Description of the product.</p>
+            </div>
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-5">
+                    <!-- Another model -->
+                </div>
+                <h3>Product Name 5</h3>
+                <p>Description of the product.</p>
+            </div>
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-5">
+                    <!-- Another model -->
+                </div>
+                <h3>Product Name 6</h3>
+                <p>Description of the product.</p>
+            </div>
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-5">
+                    <!-- Another model -->
+                </div>
+                <h3>Product Name 7</h3>
+                <p>Description of the product.</p>
+            </div>
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-5">
+                    <!-- Another model -->
+                </div>
+                <h3>Product Name 8</h3>
+                <p>Description of the product.</p>
+            </div>
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-5">
+                    <!-- Another model -->
+                </div>
+                <h3>Product Name 9</h3>
+                <p>Description of the product.</p>
+            </div>
+            <div class="xbox">
+                <div class="xbox-model" id="xbox-model-container-5">
+                    <!-- Another model -->
+                </div>
+                <h3>Product Name 10</h3>
+                <p>Description of the product.</p>
+            </div>
+    </section>
+
+    <!-- products end  -->
+
+    <!-- about start  -->
+
+    <section class="about">
+        <div class="firabtxt">
+            <h1>About Us</h1>
+        </div>
+        <div class="midabtxt">
+            <div class="who">
+                <h1>Who We Are</h>
+                    <p>[Your Store Name] is a leading online retailer for gaming enthusiasts. We are passionate about
+                        gaming
+                        and
+                        dedicated to providing top-tier products to help you get the most out of your gaming experience.
+                        With a
+                        vast inventory of gaming gear, hardware, accessories, and apparel, we cater to gamers of all
+                        kinds.
+                        Our
+                        mission is to offer gamers high-quality products at competitive prices while delivering
+                        excellent
+                        customer service.</p>
+            </div>
+            <div class="why">
+                <h1>Why Choose Us?</h1>
+                <ul>
+                    <li>Wide Selection: We offer a wide range of gaming consoles, accessories, and gear from all the
+                        major brands.</li>
+                    <li>Affordable Prices: Enjoy competitive prices with regular discounts and special offers.</li>
+                    <li>Fast Shipping: Get your products delivered quickly and efficiently.</li>
+                    <li>Customer Support: Our team is available to assist you every step of the way. </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- about end  -->
+
+    <!-- contact start  -->
+
+    <section class="contact">
+        <div class="leftside">
+            <h1>Get in Touch</h1>
+            <form id="form">
+                <div class="inputs">
+                    <!-- Name input -->
+                    <div class="input-container">
+                        <input class="input" name="name" id="name" type="text" placeholder="Name" required />
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="input-container">
+                        <input class="input" name="email" id="email" type="email" placeholder="Email" required />
+                    </div>
+
+                    <!-- subject input -->
+                    <div class="input-container">
+                        <input class="input" name="subject" id="subject" type="text" placeholder="Subject" required />
+                    </div>
+
+                    <!-- Message input -->
+                    <div class="input-container">
+                        <textarea class="input" name="message" id="message" placeholder="Message" required></textarea>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="input-container">
+                        <button class="input" id="button" onclick="sendMail()" value="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="rightside">
+            <img width="400px" src="contact.png" alt="Contact Image">
+        </div>
+    </section>
+
+
+
+    <!-- contact end  -->
+    <!-- footer start  -->
+
+    <footer>
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-column">
+                <h3>LoGo</h3>
+                <p>Your ultimate destination for the best gaming gear and accessories.</p>
+
+                <!-- Social Links -->
+                <div class="footer-social">
+                    <div class="facebook"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#007ad9"></stop></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path><path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"></path>
+                        </svg></div>
+                    <div class="insta"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                        <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+                        </svg></div>
+                    <div class="twitter"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M4.01758,4l9.07422,13.60938l-8.75586,10.39063h2.61523l7.29492,-8.65625l5.77148,8.65625h0.53516h7.46289l-9.30273,-13.95703l8.46289,-10.04297h-2.61523l-7.00195,8.31055l-5.54102,-8.31055zM7.75586,6h3.19141l13.33203,20h-3.19141z"></path></g></g>
+                        </svg></div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Stay updated with our latest offers!</p>
+                <form action="#">
+                    <div class="input-containers">
+                        <input class="input" name="text" type="email" placeholder="Email" />
+                    </div>
+                    <button class="button">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            &copy; 2025 LoGo. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- footer end  -->
+
+    <!-- cursor  -->
+
+    <div class="cursor-outer" id="cursorOuter"></div>
+    <div class="cursor-inner" id="cursorInner"></div>
+
+    <script src="sda.js"></script>
+    <script src="ads.js"></script>
+
+</body>
+
+</html>
